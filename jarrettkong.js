@@ -1,62 +1,62 @@
 const lessons = [
   {
     "id": 1,
-    "category": "General",
+    "topic": "General",
     "regex": "",
     "instructions": "Finds exactly what is between the two '/'",
-    "prompt": "Turing",
+    "prompt": "Finds the word Turing",
     "examples": ["Turing School of Software and Design"],
     "solutions": ["Turing"]
   },
   {
     "id": 2,
-    "category": "Classes",
-    "regex": "\\d",
-    "instructions": "Finds a single occurance of any digit 0-9",
-    "prompt": "find",
-    "examples": ["1234567890"],
-    "solutions": ["1","2","3","4","5","6","7","8","9","0"]
+    "topic": "Character Classes",
+    "regex": "\\d, \\D",
+    "instructions": "Finds a single occurance of any digit 0-9 or non-digit, respectively.",
+    "prompt": "Find any dates in the following text",
+    "examples": ["I was born on 06/22/1995 and my father was born on 06/24/1963"],
+    "solutions": ["06/22/1995", "06/24/1963"]
   },
   {
     "id": 3,
-    "category": "",
-    "regex": "",
-    "instructions": "",
-    "prompt": "",
-    "examples": [],
-    "solutions": []
+    "topic": "Character Classes",
+    "regex": "\\w, \\W",
+    "instructions": "Finds a single occurance of any work character or non-work character, respectively. A work character is: a letter, digit, or _",
+    "prompt": "Find the url in the folling text",
+    "examples": ["The cirriculum for the front-end program can be found at  https://frontend.turing.io/"],
+    "solutions": ["https://www.turing.io/"]
   },
   {
     "id": 4,
-    "category": "",
-    "regex": "",
-    "instructions": "",
-    "prompt": "",
-    "examples": [],
-    "solutions": []
+    "topic": "Character Classes",
+    "regex": "\\s, \\S",
+    "instructions": "Finds a single occurance of any white-space or non-white-space character, respectively. A letter, digit, or _",
+    "prompt": "Find all of Max's test scores as one match",
+    "examples": ["Max: 85 52 91 67 75"],
+    "solutions": ["85 52 91 67 75"]
   },
   {
     "id": 5,
-    "category": "",
-    "regex": "",
-    "instructions": "",
-    "prompt": "",
-    "examples": [],
-    "solutions": []
+    "topic": "Anchors",
+    "regex": "^",
+    "instructions": "Used at the start of a regular expression to denote that the string starts with that expression",
+    "prompt": "Find all two digit numbers that start with 2",
+    "examples": ["10", "12", "27", "14", "16", "18", "20", "22", "11", "13", "15"],
+    "solutions": ["27", "20", "22"]
   },
   {
     "id": 6,
-    "category": "",
-    "regex": "",
-    "instructions": "",
-    "prompt": "",
-    "examples": [],
-    "solutions": []
+    "topic": "Anchors",
+    "regex": "$",
+    "instructions": "Used at the start of a regular expression to denote that the string starts with that expression",
+    "prompt": "Find all words that end with -ing",
+    "examples": ["Turing", "eating", "movie", "software", "joking", "computer"],
+    "solutions": ["Turing", " "]
   },
   {
     "id": 7,
-    "category": "",
-    "regex": "",
+    "topic": "Character Sets",
+    "regex": "[]",
     "instructions": "",
     "prompt": "",
     "examples": [],
@@ -64,7 +64,7 @@ const lessons = [
   },
   {
     "id": 8,
-    "category": "",
+    "topic": "",
     "regex": "",
     "instructions": "",
     "prompt": "",
@@ -73,7 +73,7 @@ const lessons = [
   },
   {
     "id": 9,
-    "category": "",
+    "topic": "",
     "regex": "",
     "instructions": "",
     "prompt": "",
@@ -82,7 +82,7 @@ const lessons = [
   },
   {
     "id": 10,
-    "category": "",
+    "topic": "",
     "regex": "",
     "instructions": "",
     "prompt": "",
@@ -91,7 +91,7 @@ const lessons = [
   },
   {
     "id": 11,
-    "category": "",
+    "topic": "",
     "regex": "",
     "instructions": "",
     "prompt": "",
@@ -100,7 +100,7 @@ const lessons = [
   },
   {
     "id": 12,
-    "category": "",
+    "topic": "",
     "regex": "",
     "instructions": "",
     "prompt": "",
@@ -109,7 +109,7 @@ const lessons = [
   },
   {
     "id": 13,
-    "category": "",
+    "topic": "",
     "regex": "",
     "instructions": "",
     "prompt": "",
@@ -118,7 +118,7 @@ const lessons = [
   },
   {
     "id": 14,
-    "category": "",
+    "topic": "",
     "regex": "",
     "instructions": "",
     "prompt": "",
@@ -127,7 +127,7 @@ const lessons = [
   },
   {
     "id": 15,
-    "category": "",
+    "topic": "",
     "regex": "",
     "instructions": "",
     "prompt": "",
@@ -136,7 +136,7 @@ const lessons = [
   },
   {
     "id": 16,
-    "category": "",
+    "topic": "",
     "regex": "",
     "instructions": "",
     "prompt": "",
@@ -145,7 +145,7 @@ const lessons = [
   },
   {
     "id": 17,
-    "category": "",
+    "topic": "",
     "regex": "",
     "instructions": "",
     "prompt": "",
@@ -154,7 +154,7 @@ const lessons = [
   },
   {
     "id": 18,
-    "category": "",
+    "topic": "",
     "regex": "",
     "instructions": "",
     "prompt": "",
@@ -163,7 +163,7 @@ const lessons = [
   },
   {
     "id": 19,
-    "category": "",
+    "topic": "",
     "regex": "",
     "instructions": "",
     "prompt": "",
@@ -172,7 +172,7 @@ const lessons = [
   },
   {
     "id": 20,
-    "category": "",
+    "topic": "",
     "regex": "",
     "instructions": "",
     "prompt": "",
@@ -181,7 +181,7 @@ const lessons = [
   },
   {
     "id": 21,
-    "category": "",
+    "topic": "",
     "regex": "",
     "instructions": "",
     "prompt": "",
@@ -190,7 +190,7 @@ const lessons = [
   },
   {
     "id": 22,
-    "category": "",
+    "topic": "",
     "regex": "",
     "instructions": "",
     "prompt": "",
@@ -199,7 +199,7 @@ const lessons = [
   },
   {
     "id": 23,
-    "category": "",
+    "topic": "",
     "regex": "",
     "instructions": "",
     "prompt": "",
@@ -208,7 +208,7 @@ const lessons = [
   },
   {
     "id": 24,
-    "category": "",
+    "topic": "",
     "regex": "",
     "instructions": "",
     "prompt": "",
@@ -217,7 +217,7 @@ const lessons = [
   },
   {
     "id": 25,
-    "category": "",
+    "topic": "",
     "regex": "",
     "instructions": "",
     "prompt": "",
@@ -226,7 +226,7 @@ const lessons = [
   },
   {
     "id": 26,
-    "category": "",
+    "topic": "",
     "regex": "",
     "instructions": "",
     "prompt": "",
@@ -235,7 +235,7 @@ const lessons = [
   },
   {
     "id": 27,
-    "category": "",
+    "topic": "",
     "regex": "",
     "instructions": "",
     "prompt": "",
@@ -244,7 +244,7 @@ const lessons = [
   },
   {
     "id": 28,
-    "category": "",
+    "topic": "",
     "regex": "",
     "instructions": "",
     "prompt": "",
@@ -253,7 +253,7 @@ const lessons = [
   },
   {
     "id": 29,
-    "category": "",
+    "topic": "",
     "regex": "",
     "instructions": "",
     "prompt": "",
@@ -262,7 +262,7 @@ const lessons = [
   },
   {
     "id": 30,
-    "category": "",
+    "topic": "",
     "regex": "",
     "instructions": "",
     "prompt": "",

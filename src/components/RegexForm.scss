@@ -1,0 +1,17 @@
+.RegexForm-input {
+  height: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & input {
+    height: 30px;
+    border: 1px solid black;
+    padding-left: 15px;
+    line-height: 30px;
+
+    &:focus {
+      outline: transparent;
+    }
+  }
+}
