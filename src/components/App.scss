@@ -1,3 +1,50 @@
+$accent-color: #00C296;
+$background: #394950;
+
 .App {
-  border: 1px solid red;
+  background-color: $background;
+  height: 100vh;
+}
+
+.App-header {
+  height: 50vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-name {
+  font-size: 100px;
+  margin: 0 0 10px 0;
+}
+
+.App-tagline {
+  margin: 0 0 25px 0;
+}
+
+.App-get-started {
+  width: 200px;
+  height: 40px;
+  border: 0;
+  color: white;
+  background-color: $accent-color;
+  font-size: 17px;
+  border-radius: 2px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 0 1px lightgrey;
+
+  &:hover {
+    background-color: adjust-color($color: $accent-color, $lightness: 3%)
+  }
+
+  &:focus {
+    outline: transparent;
+  }
 }
