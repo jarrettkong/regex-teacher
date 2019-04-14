@@ -3,11 +3,10 @@ $background: #394950;
 
 .App {
   background-color: $background;
-  // height: 100vh;
 }
 
 .App-header {
-  height: 50vh;
+  height: 100vh;
   background-color: white;
   display: flex;
   flex-direction: column;

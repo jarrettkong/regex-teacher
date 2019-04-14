@@ -4,17 +4,17 @@ $accent-color: #00C296;
 .Lesson {
   color: white;
   align-items: center;
-  max-width: 1000px;
   margin: auto;
-  min-height: 50vh;
+  height: 100vh;
   padding: 30px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-// .Lesson-grid {
-//   display: grid;
-//   grid-template-columns: repeat(2, 1fr);
-//   grid-gap: 50px;
-// }
+.Lesson-container {
+  width: 1000px;
+}
 
 .Lesson-info-container {
   padding: 25px;
@@ -52,5 +52,5 @@ $accent-color: #00C296;
 }
 
 .Lesson-reminder {
-  color: $accent-color;
+  color: orange;
 }

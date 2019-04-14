@@ -11,7 +11,7 @@ class App extends Component {
     lessons: []
   }
 
-  _handleStart = () => {
+  nextLesson = () => {
     this.setState({ lessonNumber: this.state.lessonNumber + 1 })
   }
 
@@ -30,7 +30,7 @@ class App extends Component {
     let lessonDisplay = null;
 
     if(!this.state.isLoading) {
-      lessonDisplay = <Lesson lessonNumber={lessonNumber} lesson={lessons[lessonNumber - 1]} />
+      lessonDisplay = <Lesson lessonNumber={lessonNumber} lesson={lessons[lessonNumber - 1]} nextLesson={this.nextLesson} />
     }
 
     return (
@@ -39,8 +39,8 @@ class App extends Component {
           <h1 className="App-name">/ Regex /</h1>
           <p className="App-tagline">Learn Regular Expressions</p>
           <div className="App-btn-container">
-            <a className="App-btn" href="#Lesson" role="button" onClick={this._handleStart}>Learn</a>
-            <a className="App-btn" href="#Lesson" role="button" onClick={this._handleStart}>Sandbox</a>
+            <a className="App-btn" href="#Lesson" role="button">Learn</a>
+            <a className="App-btn" href="#Lesson" role="button">Sandbox</a>
           </div>
         </header>
         {lessonDisplay}

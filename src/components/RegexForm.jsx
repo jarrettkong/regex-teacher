@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './RegexForm.scss'
 
-class InputForm extends Component {
+class RegexForm extends Component {
   
   state = {
     body: '',
@@ -26,8 +26,8 @@ class InputForm extends Component {
     return (
       <form className="RegexForm-input" onSubmit={this._handleSubmit}>
         <div className="Regex-input-container main-container">
-          <label htmlFor="main-input">Body</label>
-          <input type="text" id="main-input" spellCheck="false" placeholder="Type your regular expression here..." value={this.state.body} onChange={this._handleBody}/>
+          <label htmlFor="body-input">Body</label>
+          <input type="text" id="body-input" spellCheck="false" placeholder="Type your regular expression here..." value={this.state.body} onChange={this._handleBody}/>
         </div>
         <div className="Regex-input-container flag-container">
           <label htmlFor="flag-input">Flags</label>
@@ -39,4 +39,4 @@ class InputForm extends Component {
   }
 }
 
-export default InputForm
+export default RegexForm
