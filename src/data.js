@@ -3,62 +3,62 @@ const lessons = [
     "id": 1,
     "topic": "General",
     "regex": "//",
-    "instructions": "Finds exactly what is between the //",
+    "instructions": "A regular expression is a set of characters that define a search pattern. At first they may look like nonsense, but after this course you'll be able to read them and know exactly what they're searching for.\n\nThe inspiration for this course comes from practicing string manipulation, where I've found myself in a situation where I've recognized that a regular expression (or regex) would be extremely useful, but I didn't have the knowledge to write my own.\n\nRegular expressions work across programming languages, so you will not need to relearn them when transitioning to another language. Imagine trying to find every occurance of an email address in a document, but an email address can have any number of characters, some symbols, and domain names. This is where regular expressions become very powerful, since they are extremely dynamic.\n\nA regular expression is defined by two //, with the desired sequence in between So, the regular expression /example/ will find exactly the word \"example\", but not \"Example\", just like the find feature you might see in your web browser. This is where we will start",
     "prompt": "Find the word Turing",
-    "examples": ["Turing School of Software and Design"],
-    "solutions": ["Turing"]
+    "examples": ["Turing"],
+    "solutions": [true]
   },
   {
     "id": 2,
     "topic": "Character Classes",
     "regex": "\\d, \\D",
     "instructions": "Finds a single occurance of any digit 0-9 or non-digit, respectively.",
-    "prompt": "Find any dates in the following text",
-    "examples": ["I was born on 06/22/1995 and my father was born on 06/24/1963"],
-    "solutions": ["06/22/1995", "06/24/1963"]
+    "prompt": "Find any dates of the format dd/dd/dddd, where d can be any digit between zero and nine",
+    "examples": ["06/22/1995", "06/24/1963", "8/9/1996", "April 14, 2019", "1995/06/22"],
+    "solutions": [true, true, false, false, false]
   },
   {
     "id": 3,
     "topic": "Character Classes",
     "regex": "\\w, \\W",
     "instructions": "Finds a single occurance of any work character or non-work character, respectively. A work character is: a letter, digit, or _",
-    "prompt": "Find the url in the folling text",
-    "examples": ["The cirriculum for the front-end program can be found at  https://frontend.turing.io/"],
-    "solutions": ["https://www.turing.io/"]
+    "prompt": "Find the url https://www.turing.io",
+    "examples": ["https://www.turing.io/", "https://google.com"],
+    "solutions": [true, false]
   },
   {
     "id": 4,
     "topic": "Character Classes",
     "regex": "\\s, \\S",
     "instructions": "Finds a single occurance of any white-space or non-white-space character, respectively. A letter, digit, or _",
-    "prompt": "Find all of Max's test scores as one match",
-    "examples": ["Max: 85 52 91 67 75"],
-    "solutions": ["85 52 91 67 75"]
+    "prompt": "Find a set of 5 two-digit numbers separated by a space",
+    "examples": ["85 52 91 67 75", "1 2 3 4 5", "8552 91 67 75", "1234567890", "11 12 13 14 15"],
+    "solutions": [true, false, false, false, true]
   },
   {
     "id": 5,
     "topic": "Anchors",
     "regex": "^",
     "instructions": "Used at the start of a regular expression to denote that the string starts with that expression",
-    "prompt": "Find all two digit numbers that start with 2",
-    "examples": ["10", "12", "27", "14", "16", "18", "20", "22", "11", "13", "15"],
-    "solutions": ["27", "20", "22"]
+    "prompt": "Find any three-digit number that start with 1",
+    "examples": ["100", "111", "200", "300", "157", "187", "110", "22", "101", "199", "999"],
+    "solutions": [true, true, false, false, true, true, true, false, true, true, false]
   },
   {
     "id": 6,
     "topic": "Anchors",
     "regex": "$",
-    "instructions": "Used at the start of a regular expression to denote that the string starts with that expression",
-    "prompt": "Find all words that end with -ing",
+    "instructions": "Used at the end of a regular expression to denote that the string ends with that expression",
+    "prompt": "Find any six-letter word that end with -ing",
     "examples": ["Turing", "eating", "movie", "software", "joking", "computer"],
-    "solutions": ["Turing", " "]
+    "solutions": [true, true, false, false, true, false]
   },
   {
     "id": 7,
     "topic": "Character Sets",
     "regex": "[]",
-    "instructions": "",
-    "prompt": "",
+    "instructions": "Used to denote any specific set of characters in the search. For example, [abcdef] would match any letter a, b, c, d, e, or f",
+    "prompt": "Check to see if the ",
     "examples": [],
     "solutions": []
   },

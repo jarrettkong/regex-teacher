@@ -4,19 +4,37 @@ import './RegexForm.scss'
 class InputForm extends Component {
   
   state = {
-    inputValue: ''
+    body: '',
+    flags: ''
   }
 
-  _handleChange = e => {
-    this.setState({ inputValue: e.target.value }, console.log(this.state.inputValue));
+  _handleBody = e => {
+    this.setState({ body: e.target.value });
+  }
+
+  _handleFlag = e => {
+    this.setState({ flags: e.target.value })
+  }
+
+  _handleSubmit = e => {
+    e.preventDefault();
+    const { body, flags } = this.state;
+    this.props.checkAnswer(body, flags);
   }
 
   render() {
     return (
-      <header className="RegexForm-input">
-        <label htmlFor="regex-input">Regular Expression</label>
-        <input type="text" id="regex-input" placeholder="Type your regular expression here..." value={this.state.inputValue} onChange={this._handleChange}/>
-      </header>
+      <form className="RegexForm-input" onSubmit={this._handleSubmit}>
+        <div className="Regex-input-container main-container">
+          <label htmlFor="main-input">Body</label>
+          <input type="text" id="main-input" spellCheck="false" placeholder="Type your regular expression here..." value={this.state.body} onChange={this._handleBody}/>
+        </div>
+        <div className="Regex-input-container flag-container">
+          <label htmlFor="flag-input">Flags</label>
+          <input type="text" id="flag-input" spellCheck="false" placeholder="Flags..." value={this.state.flags} onChange={this._handleFlag}/>
+        </div>
+        <input type="submit" className="RegexForm-submit"/>
+      </form>
     )
   }
 }

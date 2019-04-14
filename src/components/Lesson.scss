@@ -1,3 +1,6 @@
+$accent-color: #00C296;
+
+
 .Lesson {
   color: white;
   align-items: center;
@@ -7,11 +10,11 @@
   padding: 30px 25px;
 }
 
-.Lesson-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px;
-}
+// .Lesson-grid {
+//   display: grid;
+//   grid-template-columns: repeat(2, 1fr);
+//   grid-gap: 50px;
+// }
 
 .Lesson-info-container {
   padding: 25px;
@@ -28,7 +31,7 @@
   margin: 0;
 }
 
-.Lesson-regex {
+.Lesson-code {
   font-family: 'Roboto Mono', monospace;
   letter-spacing: 0;
 }
@@ -46,4 +49,8 @@
   & li {
     margin-left: 20px;
   }
+}
+
+.Lesson-reminder {
+  color: $accent-color;
 }
