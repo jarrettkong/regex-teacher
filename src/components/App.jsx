@@ -32,13 +32,16 @@ class App extends Component {
     if(!this.state.isLoading) {
       lessonDisplay = <Lesson lessonNumber={lessonNumber} lesson={lessons[lessonNumber - 1]} />
     }
-    
+
     return (
       <section className="App">
         <header className="App-header">
           <h1 className="App-name">/ Regex /</h1>
           <p className="App-tagline">Learn Regular Expressions</p>
-          <a className="App-get-started" href="#current-lesson" role="button" onClick={this._handleStart}>Get Started</a>
+          <div className="App-btn-container">
+            <a className="App-btn" href="#Lesson" role="button" onClick={this._handleStart}>Learn</a>
+            <a className="App-btn" href="#Lesson" role="button" onClick={this._handleStart}>Sandbox</a>
+          </div>
         </header>
         {lessonDisplay}
       </section>

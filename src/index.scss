@@ -6,9 +6,10 @@
 
 html,
 body {
-  border: 1px solid blue;
+  scroll-behavior: smooth;
   padding: 0;
   margin: 0;
   height: 100vh;
   width: 100vw;
+  font-family: 'Roboto', sans-serif;
 }

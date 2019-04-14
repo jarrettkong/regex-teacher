@@ -1,5 +1,5 @@
 .RegexForm-input {
-  width: 40%;
+  width: 100%;
   
   & input {
     width: 100%;
@@ -8,6 +8,7 @@
     font-size: 17px;
     border: 0;
     border-radius: 2px;
+    margin-top: 5px;
 
     &:focus {
       outline: transparent;

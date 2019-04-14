@@ -14,7 +14,8 @@ class InputForm extends Component {
   render() {
     return (
       <header className="RegexForm-input">
-        <input type="text" placeholder="Enter a Regular Expression" value={this.state.inputValue} onChange={this._handleChange}/>
+        <label htmlFor="regex-input">Regular Expression</label>
+        <input type="text" id="regex-input" placeholder="Type your regular expression here..." value={this.state.inputValue} onChange={this._handleChange}/>
       </header>
     )
   }

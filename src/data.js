@@ -2,9 +2,9 @@ const lessons = [
   {
     "id": 1,
     "topic": "General",
-    "regex": "",
-    "instructions": "Finds exactly what is between the two '/'",
-    "prompt": "Finds the word Turing",
+    "regex": "//",
+    "instructions": "Finds exactly what is between the //",
+    "prompt": "Find the word Turing",
     "examples": ["Turing School of Software and Design"],
     "solutions": ["Turing"]
   },

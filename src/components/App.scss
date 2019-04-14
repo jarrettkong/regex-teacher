@@ -24,7 +24,13 @@ $background: #394950;
   margin: 0 0 25px 0;
 }
 
-.App-get-started {
+.App-btn-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px;
+}
+
+.App-btn {
   width: 200px;
   height: 40px;
   border: 0;
