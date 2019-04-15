@@ -3,7 +3,7 @@ const lessons = [
     "id": 1,
     "topic": "General",
     "regex": "//",
-    "instructions": "A regular expression is a set of characters that define a search pattern. At first they may look like nonsense, but after this course you'll be able to read them and know exactly what they're searching for.\n\nThe inspiration for this course comes from practicing string manipulation, where I've found myself in a situation where I've recognized that a regular expression (or regex) would be extremely useful, but I didn't have the knowledge to write my own.\n\nRegular expressions work across programming languages, so you will not need to relearn them when transitioning to another language. Imagine trying to find every occurance of an email address in a document, but an email address can have any number of characters, some symbols, and domain names. This is where regular expressions become very powerful, since they are extremely dynamic.\n\nA regular expression is defined by two //, with the desired sequence in between and is made of two parts, the body and the flags, which are optional and come after the second /. So, the regular expression /example/ will find exactly the word \"example\", but not \"Example\", just like the find feature you might see in your web browser. This is where we will start",
+    "instructions": "A regular expression is a set of characters that define a search pattern. At first they may look like nonsense, but after this course you'll be able to read them and know exactly what they're searching for.\n\nThe inspiration for this course comes from practicing string manipulation, where I've found myself in situations recognizing that a regular expression (or regex) would be extremely useful, but I didn't have the knowledge to write my own.\n\nRegular expressions work across programming languages, so you will not need to relearn them when transitioning to another language. Imagine trying to find every occurance of an email address in a document, but an email address can have any number of characters, some symbols, and domain names. This is where regular expressions become very powerful, since they are extremely dynamic.\n\nA regular expression is defined by two //, with the desired sequence in between and is made of two parts, the body and the flags, which are optional and come after the ending /. So, the regular expression /example/ will find exactly the word \"example\", but not \"Example\", just like the find feature you might see in your web browser",
     "prompt": "Find the word Turing",
     "cases": ["Turing"],
     "solutions": [true]
@@ -55,27 +55,27 @@ const lessons = [
   },
   {
     "id": 7,
-    "topic": "Character Sets",
-    "regex": "[]",
-    "instructions": "Used to denote any specific set of characters in the search. For example, [abcdef] would match any letter a, b, c, d, e, or f",
-    "prompt": "Check to see if the ",
-    "cases": [],
-    "solutions": []
-  },
-  {
-    "id": 8,
-    "topic": "",
-    "regex": "",
+    "topic": "Anchors",
+    "regex": "^, $",
     "instructions": "",
     "prompt": "",
     "cases": [],
     "solutions": []
   },
   {
+    "id": 8,
+    "topic": "Character Sets",
+    "regex": "[]",
+    "instructions": "Used to denote any specific set of characters in the search. For example, [abcdef] would match any letter a, b, c, d, e, or f. Characters that normally need to be escaped with \\ do not need to inside a set",
+    "prompt": "Check to see if character is a vowel ",
+    "cases": ["a","b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"],
+    "solutions": [true, false, false, false, true, false, false, false, true, false, false, false, false, false, true, false, false, false, false, false, true, false, false, false, false, false]
+  },
+  {
     "id": 9,
-    "topic": "",
-    "regex": "",
-    "instructions": "",
+    "topic": "Ranges",
+    "regex": "{n}",
+    "instructions": "Checks if the previous character or group repeats n amount of times. For example, /\\d{10}/ checks for a string of 10 digits",
     "prompt": "",
     "cases": [],
     "solutions": []

@@ -3,9 +3,12 @@ import './RegexForm.scss'
 
 class RegexForm extends Component {
   
-  state = {
-    body: '',
-    flags: ''
+  constructor(props){
+    super(props);
+    this.state = {
+      body: '',
+      flags: ''
+    }
   }
 
   _handleBody = e => {
@@ -27,11 +30,11 @@ class RegexForm extends Component {
       <form className="RegexForm-input" onSubmit={this._handleSubmit}>
         <div className="Regex-input-container main-container">
           <label htmlFor="body-input">Body</label>
-          <input type="text" id="body-input" spellCheck="false" placeholder="Type your regular expression here..." value={this.state.body} onChange={this._handleBody}/>
+          <input type="text" id="body-input" spellCheck="false" placeholder="/body/" value={this.state.body} onChange={this._handleBody}/>
         </div>
         <div className="Regex-input-container flag-container">
           <label htmlFor="flag-input">Flags</label>
-          <input type="text" id="flag-input" spellCheck="false" placeholder="Flags..." value={this.state.flags} onChange={this._handleFlag}/>
+          <input type="text" id="flag-input" spellCheck="false" placeholder="/flags" value={this.state.flags} onChange={this._handleFlag}/>
         </div>
         <input type="submit" className="RegexForm-submit"/>
       </form>

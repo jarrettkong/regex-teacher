@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
-import './Lesson.scss';
 import RegexForm from './RegexForm.jsx'
+import './Lesson.scss';
 
 class Lesson extends Component {
 
-  state = {
-    complete: false
+  constructor(props) {
+    super(props)
+    // ? move to app
+    this.state = {
+      complete: false
+    }
   }
 
   checkAnswer = (body, flags) => {
@@ -13,18 +17,16 @@ class Lesson extends Component {
     const regex = new RegExp(body, flags);
     const result = cases.map(ex => regex.test(ex));
     if(result.toString() === solutions.toString()) {
-      this.setState({ complete: true }, () => {
-        console.log(this.state.complete)
-      })
+      this.setState({ complete: true });
     }
   }
 
-  componentDidMount() {
-    console.log(this.state.complete)
-  }
+  
 
   render() {
-    const { lesson, lessonNumber } = this.props;
+    const { lesson, lessonNumber, nextLesson } = this.props;
+    const continueButton = <button className="Lesson-next-round App-btn" onClick={nextLesson}>Continue</button>
+
     return (
       <section className="Lesson" id="Lesson">
         <div className="Lesson-container">
@@ -37,7 +39,7 @@ class Lesson extends Component {
               <h3>Prompt: <span className="Lesson-text">{lesson.prompt}.</span></h3>
               <RegexForm checkAnswer={this.checkAnswer}/>
               <h4 className="Lesson-reminder">NOTE: You will not need to include the // in your answer</h4>
-              {this.state.complete && <button className="Lesson-next-round App-btn" onClick={this.props.nextLesson}>Continue</button>}
+              {this.state.complete && continueButton}
             </section>
           </div>
         </div>

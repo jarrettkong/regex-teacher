@@ -37,10 +37,11 @@ class App extends Component {
       <section className="App">
         <header className="App-header">
           <h1 className="App-name">/ Regex /</h1>
-          <p className="App-tagline">Learn Regular Expressions</p>
+          {/* <p className="App-tagline">Learn Regular Expressions</p> */}
           <div className="App-btn-container">
-            <a className="App-btn" href="#Lesson" role="button">Learn</a>
-            <a className="App-btn" href="#Lesson" role="button">Sandbox</a>
+            <button className="App-btn"><a href="#Lesson" role="button">Learn</a></button>
+            <button className="App-btn" disabled>Sandbox</button>
+            <p>Coming Soon</p>
           </div>
         </header>
         {lessonDisplay}

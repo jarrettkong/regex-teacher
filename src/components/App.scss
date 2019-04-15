@@ -16,7 +16,7 @@ $background: #394950;
 
 .App-name {
   font-size: 100px;
-  margin: 0 0 10px 0;
+  margin: 0;
 }
 
 .App-tagline {
@@ -26,7 +26,16 @@ $background: #394950;
 .App-btn-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 25px;
+  grid-column-gap: 25px;
+  text-align: center;
+
+  & p {
+    grid-column-start: 2;
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: lightslategrey;
+    font-weight: 600;
+  }
 }
 
 .App-btn {
@@ -44,6 +53,17 @@ $background: #394950;
   cursor: pointer;
   text-decoration: none;
   box-shadow: 0 0 1px lightgrey;
+  padding: 0;
+
+  & a {
+    text-decoration: none;
+    width: 100%;
+    line-height: 40px;
+    padding: 0;
+    &:visited {
+      color: white;
+    }
+  }
 
   &:hover {
     background-color: adjust-color($color: $accent-color, $lightness: 3%)
@@ -51,5 +71,10 @@ $background: #394950;
 
   &:focus {
     outline: transparent;
+  }
+
+  &:disabled {
+    background-color: #80C7B7;
+    cursor: not-allowed;
   }
 }
