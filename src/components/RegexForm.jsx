@@ -6,13 +6,13 @@ class RegexForm extends Component {
   constructor(props){
     super(props);
     this.state = {
-      body: '',
+      pattern: '',
       flags: ''
     }
   }
 
-  _handleBody = e => {
-    this.setState({ body: e.target.value });
+  _handlePattern = e => {
+    this.setState({ pattern: e.target.value });
   }
 
   _handleFlag = e => {
@@ -21,20 +21,20 @@ class RegexForm extends Component {
 
   _handleSubmit = e => {
     e.preventDefault();
-    const { body, flags } = this.state;
-    this.props.checkAnswer(body, flags);
+    const { pattern, flags } = this.state;
+    this.props.checkAnswer(pattern, flags);
   }
 
   render() {
     return (
       <form className="RegexForm-input" onSubmit={this._handleSubmit}>
         <div className="Regex-input-container main-container">
-          <label htmlFor="body-input">Body</label>
-          <input type="text" id="body-input" spellCheck="false" placeholder="/body/" value={this.state.body} onChange={this._handleBody}/>
+          <label htmlFor="pattern-input">Pattern</label>
+          <input type="text" id="pattern-input" spellCheck="false" placeholder="/pattern/" value={this.state.pattern} onChange={this._handlePattern} minLength="1"/>
         </div>
         <div className="Regex-input-container flag-container">
           <label htmlFor="flag-input">Flags</label>
-          <input type="text" id="flag-input" spellCheck="false" placeholder="/flags" value={this.state.flags} onChange={this._handleFlag}/>
+          <input type="text" id="flag-input" spellCheck="false" placeholder="/flags" value={this.state.flags} onChange={this._handleFlag} pattern="[gimsxeU]*"/>
         </div>
         <input type="submit" className="RegexForm-submit"/>
       </form>
