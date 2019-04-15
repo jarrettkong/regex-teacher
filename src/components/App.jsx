@@ -42,7 +42,7 @@ class App extends Component {
     }
 
     return (
-      <section className="App">
+      <section className="App" id="App">
         <header className="App-header">
           <h1 className="App-name">/ Regex /</h1>
           <p className="App-tagline">Learn Regular Expressions</p>

@@ -4,11 +4,6 @@ import './Lesson.scss';
 
 class Lesson extends Component {
 
-  // constructor(props) {
-  //   super(props)
-  //   // ? move to app
-  // }
-
   _handleClick() {
     this.setState({complete: false}, () => {
       this.props.nextLesson()
@@ -33,6 +28,7 @@ class Lesson extends Component {
 
     return (
       <section className="Lesson" id="Lesson">
+      <a href="#App" className="home-icon"><i className="material-icons">home</i></a>
         <div className="Lesson-container">
           <h2 className="Lesson-header">Lesson {lessonNumber}</h2>
           <div className="Lesson-grid">

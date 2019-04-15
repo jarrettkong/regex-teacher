@@ -22,9 +22,9 @@ const lessons = [
     "topic": "Character Classes",
     "syntax": "\\w, \\W",
     "instructions": "Finds a single occurance of any work character or non-work character, respectively. A work character is: a letter, digit, or _.",
-    "problem": "Find the url https://www.turing.io",
-    "cases": ["https://www.turing.io/", "https://google.com"],
-    "solutions": [true, false]
+    "problem": "Find both https://frontend.turing.io/ and https://backend.turing.io",
+    "cases": ["https://frontend.turing.io/", "https://backend.turing.io/"],
+    "solutions": [true, true]
   },
   {
     "id": 4,
@@ -165,109 +165,28 @@ const lessons = [
     "id": 19,
     "topic": "Flags",
     "syntax": "i",
-    "instructions": "Flags go at the end of a regular expression after the ending /. They specify special cases ",
-    "problem": "",
-    "cases": [],
-    "solutions": []
+    "instructions": "Flags go at the end of a regular expression after the ending /. They specify special cases for the pattern. The i flag ignores case. So [a-z] is the same as [A-Z], for instance.",
+    "problem": "Check if a letter is a vowel, regardless of case.",
+    "cases": ["A", "E", "I", "O", "U", "a", "e", "i", "o", "u", "r", "s", "T", ],
+    "solutions": [true, true, true, true, true, true, true, true, true, true, false, false, false]
   },
   {
     "id": 20,
-    "topic": "",
-    "syntax": "",
-    "instructions": ".",
-    "problem": "",
-    "cases": [],
-    "solutions": []
-  },
-  {
-    "id": 21,
-    "topic": "",
-    "syntax": "",
-    "instructions": ".",
-    "problem": "",
-    "cases": [],
-    "solutions": []
-  },
-  {
-    "id": 22,
-    "topic": "",
-    "syntax": "",
-    "instructions": ".",
-    "problem": "",
-    "cases": [],
-    "solutions": []
-  },
-  {
-    "id": 23,
-    "topic": "",
-    "syntax": "",
-    "instructions": ".",
-    "problem": "",
-    "cases": [],
-    "solutions": []
-  },
-  {
-    "id": 24,
-    "topic": "",
-    "syntax": "",
-    "instructions": ".",
-    "problem": "",
-    "cases": [],
-    "solutions": []
-  },
-  {
-    "id": 25,
-    "topic": "",
-    "syntax": "",
-    "instructions": ".",
-    "problem": "",
-    "cases": [],
-    "solutions": []
-  },
-  {
-    "id": 26,
-    "topic": "",
-    "syntax": "",
-    "instructions": ".",
-    "problem": "",
-    "cases": [],
-    "solutions": []
-  },
-  {
-    "id": 27,
-    "topic": "",
-    "syntax": "",
-    "instructions": ".",
-    "problem": "",
-    "cases": [],
-    "solutions": []
-  },
-  {
-    "id": 28,
-    "topic": "",
-    "syntax": "",
-    "instructions": ".",
-    "problem": "",
-    "cases": [],
-    "solutions": []
-  },
-  {
-    "id": 29,
     "topic": "Validation: Email Address",
     "syntax": "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$",
     "instructions": "Email addresses can be long and complicated. For example, the syntax that the W3C uses for it's <input type=\"email\" /> elements is the one listed in this lesson. This includes every possible ASCII charcter that is techincally allowed in an email address, but most email providers limit the special characters that they allow.",
-    "problem": "",
-    "cases": [],
-    "solutions": []
+    "problem": "Write a regular expression that can find any email of the following format: The email starts with a letter and can contain _ and -. It will have a domain name that can include - and will end in either .io, .org, or .com.",
+    "cases": ["turing_123@turing.io", "thatpamiam@gmail.com", "hello-world@computer-science.org", "failure@test.co.uk"],
+    "solutions": [true, true, true, false]
   },
   {
-    "id": 30,
+    "id": 21,
     "topic": "Validation: Password",
-    "syntax": "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$",
+    "syntax": "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$",
     "instructions": "Passwords are some of the most difficult things to validate, and only partially because of the sheer amount of different characters that are involved. Unlike emails, passwords do not have a predictable format and the amount of accepted characters is greatly increased. Rather, there are usually restrictions on the number of characters, and the inclusion or exclusion of certain types of characters. The syntax given in this lesson is for a password of minimum 8 characters that includes at least one uppercase letter, one lowercase letter, and one number, and one special character.",
-    "problem": "",
-    "cases": ["Turing123!"],
-    "solutions": []
+    "problem": "Write a regular expression that checks if a password has one uppercase letter, one lowercase letter, one number, and at least 10 characters",
+    "cases": ["Turing123!", "password", "ThisWorks99"],
+    "solutions": [true, false, true]
   },
 ]
 
