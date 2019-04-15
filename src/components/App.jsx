@@ -28,9 +28,11 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.setState({ lessons }, () => {
-      this.setState({ isLoading: false })
-    })
+
+    fetch('https://fe-apps.herokuapp.com/api/v1/memoize/1901/jarrettkong/lessons')
+    .then(res => res.json())
+    .then(data => this.setState({ lessons: data.lessons, isLoading: false }))
+    .catch(err => console.log(err));
   }
 
   render() {
