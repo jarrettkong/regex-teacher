@@ -30,7 +30,7 @@ const lessons = [
     "id": 4,
     "topic": "Character Classes",
     "regex": "\\s, \\S",
-    "instructions": "Finds a single occurance of any white-space or non-white-space character, respectively. A letter, digit, or _",
+    "instructions": "Finds a single occurance of any white-space or non-white-space character, respectively. A white-space character is: space, new line",
     "prompt": "Find a set of 5 two-digit numbers separated by a space",
     "cases": ["85 52 91 67 75", "1 2 3 4 5", "8552 91 67 75", "1234567890", "11 12 13 14 15"],
     "solutions": [true, false, false, false, true]
@@ -47,7 +47,7 @@ const lessons = [
   {
     "id": 6,
     "topic": "Anchors",
-    "regex": "$",
+    "regex": "$, \\Z",
     "instructions": "Used at the end of a regular expression to denote that the string ends with that expression",
     "prompt": "Find any six-letter word that end with -ing",
     "cases": ["Turing", "eating", "movie", "software", "joking", "computer"],
@@ -57,7 +57,7 @@ const lessons = [
     "id": 7,
     "topic": "Anchors",
     "regex": "^, $",
-    "instructions": "",
+    "instructions": ".",
     "prompt": "",
     "cases": [],
     "solutions": []
@@ -66,7 +66,7 @@ const lessons = [
     "id": 8,
     "topic": "Character Sets",
     "regex": "[]",
-    "instructions": "Used to denote any specific set of characters in the search. For example, [abcdef] would match any letter a, b, c, d, e, or f. Characters that normally need to be escaped with \\ do not need to inside a set",
+    "instructions": "Used to denote any specific set of characters in the search. For example, [abcdef] would match any letter a, b, c, d, e, or f. Characters that normally need to be escaped with \\ do not need to inside a set.",
     "prompt": "Check to see if character is a vowel ",
     "cases": ["a","b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"],
     "solutions": [true, false, false, false, true, false, false, false, true, false, false, false, false, false, true, false, false, false, false, false, true, false, false, false, false, false]
@@ -76,15 +76,15 @@ const lessons = [
     "topic": "Ranges",
     "regex": "{n}",
     "instructions": "Checks if the previous character or group repeats n amount of times. For example, /\\d{10}/ checks for a string of 10 digits",
-    "prompt": "",
-    "cases": [],
-    "solutions": []
+    "prompt": "Find any numbers that are 5 digits long, start with 1, and end with 9.",
+    "cases": [10009, 20159, 80203, 93001, 51908, 17929, 17399, 00000],
+    "solutions": [true, false, false, false, false, true, true, false]
   },
   {
     "id": 10,
-    "topic": "",
-    "regex": "",
-    "instructions": "",
+    "topic": "Ranges",
+    "regex": "{n,}",
+    "instructions": "Checks if the previous character or group repeats at least n amount of times.",
     "prompt": "",
     "cases": [],
     "solutions": []
@@ -93,7 +93,7 @@ const lessons = [
     "id": 11,
     "topic": "",
     "regex": "",
-    "instructions": "",
+    "instructions": ".",
     "prompt": "",
     "cases": [],
     "solutions": []
@@ -102,7 +102,7 @@ const lessons = [
     "id": 12,
     "topic": "",
     "regex": "",
-    "instructions": "",
+    "instructions": ".",
     "prompt": "",
     "cases": [],
     "solutions": []
@@ -111,7 +111,7 @@ const lessons = [
     "id": 13,
     "topic": "",
     "regex": "",
-    "instructions": "",
+    "instructions": ".",
     "prompt": "",
     "cases": [],
     "solutions": []
@@ -120,7 +120,7 @@ const lessons = [
     "id": 14,
     "topic": "",
     "regex": "",
-    "instructions": "",
+    "instructions": ".",
     "prompt": "",
     "cases": [],
     "solutions": []
@@ -129,7 +129,7 @@ const lessons = [
     "id": 15,
     "topic": "",
     "regex": "",
-    "instructions": "",
+    "instructions": ".",
     "prompt": "",
     "cases": [],
     "solutions": []
@@ -138,7 +138,7 @@ const lessons = [
     "id": 16,
     "topic": "",
     "regex": "",
-    "instructions": "",
+    "instructions": ".",
     "prompt": "",
     "cases": [],
     "solutions": []
@@ -147,7 +147,7 @@ const lessons = [
     "id": 17,
     "topic": "",
     "regex": "",
-    "instructions": "",
+    "instructions": ".",
     "prompt": "",
     "cases": [],
     "solutions": []
@@ -156,7 +156,7 @@ const lessons = [
     "id": 18,
     "topic": "",
     "regex": "",
-    "instructions": "",
+    "instructions": ".",
     "prompt": "",
     "cases": [],
     "solutions": []
@@ -165,7 +165,7 @@ const lessons = [
     "id": 19,
     "topic": "",
     "regex": "",
-    "instructions": "",
+    "instructions": ".",
     "prompt": "",
     "cases": [],
     "solutions": []
@@ -174,7 +174,7 @@ const lessons = [
     "id": 20,
     "topic": "",
     "regex": "",
-    "instructions": "",
+    "instructions": ".",
     "prompt": "",
     "cases": [],
     "solutions": []
@@ -183,7 +183,7 @@ const lessons = [
     "id": 21,
     "topic": "",
     "regex": "",
-    "instructions": "",
+    "instructions": ".",
     "prompt": "",
     "cases": [],
     "solutions": []
@@ -192,7 +192,7 @@ const lessons = [
     "id": 22,
     "topic": "",
     "regex": "",
-    "instructions": "",
+    "instructions": ".",
     "prompt": "",
     "cases": [],
     "solutions": []
@@ -201,7 +201,7 @@ const lessons = [
     "id": 23,
     "topic": "",
     "regex": "",
-    "instructions": "",
+    "instructions": ".",
     "prompt": "",
     "cases": [],
     "solutions": []
@@ -210,7 +210,7 @@ const lessons = [
     "id": 24,
     "topic": "",
     "regex": "",
-    "instructions": "",
+    "instructions": ".",
     "prompt": "",
     "cases": [],
     "solutions": []
@@ -219,7 +219,7 @@ const lessons = [
     "id": 25,
     "topic": "",
     "regex": "",
-    "instructions": "",
+    "instructions": ".",
     "prompt": "",
     "cases": [],
     "solutions": []
@@ -228,7 +228,7 @@ const lessons = [
     "id": 26,
     "topic": "",
     "regex": "",
-    "instructions": "",
+    "instructions": ".",
     "prompt": "",
     "cases": [],
     "solutions": []
@@ -237,7 +237,7 @@ const lessons = [
     "id": 27,
     "topic": "",
     "regex": "",
-    "instructions": "",
+    "instructions": ".",
     "prompt": "",
     "cases": [],
     "solutions": []
@@ -246,29 +246,29 @@ const lessons = [
     "id": 28,
     "topic": "",
     "regex": "",
-    "instructions": "",
+    "instructions": ".",
     "prompt": "",
     "cases": [],
     "solutions": []
   },
   {
     "id": 29,
-    "topic": "",
-    "regex": "",
-    "instructions": "",
+    "topic": "Validation: Email Address",
+    "regex": "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$",
+    "instructions": "Email addresses can be long and complicated. For example, the regex that the W3C uses for it's <input type=\"email\" /> elements is the one listed in this lesson. This includes every possible ASCII charcter that is techincally allowed in an email address, but most email providers limit the special characters that they allow.",
     "prompt": "",
     "cases": [],
     "solutions": []
   },
   {
     "id": 30,
-    "topic": "",
-    "regex": "",
-    "instructions": "",
+    "topic": "Validation: Password",
+    "regex": "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,10}$",
+    "instructions": "Passwords are some of the most difficult things to validate, and only partially because of the sheer amount of different characters that are involved. Unlike.",
     "prompt": "",
     "cases": [],
     "solutions": []
-  }
+  },
 ]
 
 export default lessons;
