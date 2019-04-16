@@ -49,7 +49,7 @@ describe('Lesson', () => {
   })
 
   // conditional rendering test when complete
-  describe('Lesson render when complete', () => {
+  describe('Render complete button', () => {
 
     beforeEach(() => {
       wrapper = shallow (
@@ -72,6 +72,24 @@ describe('Lesson', () => {
         expect(mockNextLesson).toHaveBeenCalled();
       })
 
+    })
+
+  })
+
+  describe('Course complete screen', () => {
+
+    beforeEach(() => {
+      wrapper = shallow (
+        <Lesson lessonNumber="22"
+                lesson={mockData[21]}
+                nextLesson={mockNextLesson}
+                completeLesson={mockCompleteLesson}
+                complete="true"/>
+      )
+    })
+    
+    it('should render the completeButton when the correct answer is guessed', () => {
+      expect(wrapper).toMatchSnapshot();
     })
 
   })
