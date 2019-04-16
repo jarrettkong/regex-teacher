@@ -1,0 +1,47 @@
+$accent-color: #00C296;
+
+.Nav {
+  position: absolute;
+  top: 30px;
+  left: 25px;  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  & p { 
+    display: inline;
+    margin: 0 0 0 15px;
+  }
+}
+
+.Nav-container {
+  display: flex;
+  align-items: center;
+}
+
+.Nav-icon {
+  background-color: $accent-color;
+  border: 0;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 15px 0;
+
+  & i {
+    font-size: 40px;
+  }
+
+  &:hover {
+    background-color: adjust-color($color: $accent-color, $lightness: 3%)
+  }
+
+  &:focus {
+    outline: transparent;
+  }
+}

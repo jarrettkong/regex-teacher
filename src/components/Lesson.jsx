@@ -1,25 +1,25 @@
 import React, { Component } from 'react'
 import RegexForm from './RegexForm.jsx'
+import Nav from './Nav.jsx';
 import './Lesson.scss';
 
 class Lesson extends Component {
 
-  _handleClick() {
-    this.setState({complete: false}, () => {
-      this.props.nextLesson()
-    })
-  }
-
   checkAnswer = (pattern, flags) => {
-    if(!pattern.length) {
-      return;
-    }
-    const { cases, solutions } = this.props.lesson;
-    const regex = new RegExp(pattern, flags);
-    const result = cases.map(ex => regex.test(ex));
+    const { solutions } = this.props.lesson;
+    const result = this.getResult(pattern, flags)
     if(result.toString() === solutions.toString()) {
       this.props.completeLesson();
     }
+  }
+
+  getResult = (pattern, flags) => {
+    if(!pattern.length) {
+      return;
+    }
+    const { cases } = this.props.lesson;
+    const regex = new RegExp(pattern, flags);
+    return cases.map(ex => regex.test(ex));
   }
 
   render() {
@@ -28,7 +28,7 @@ class Lesson extends Component {
 
     return (
       <section className="Lesson" id="Lesson">
-      <a href="#App" className="home-icon"><i className="material-icons">home</i></a>
+        <Nav resetProgress={this.props.resetProgress}/>
         <div className="Lesson-container">
           <h2 className="Lesson-header">Lesson {lessonNumber}</h2>
           <div className="Lesson-grid">
@@ -36,8 +36,8 @@ class Lesson extends Component {
               <h3>Topic: <span className="Lesson-text">{lesson.topic}</span></h3>
               <h3>Syntax: <span className="Lesson-text Lesson-code">{lesson.syntax}</span></h3>
               <h3>Instructions: <span className="Lesson-text">{lesson.instructions}.</span></h3>
-              <h3>Problem: <span className="Lesson-text">{lesson.problem}.</span></h3>
-              <RegexForm checkAnswer={this.checkAnswer}/>
+              <h3>Problem: <span className="Lesson-text">{lesson.problem}</span></h3>
+              <RegexForm checkAnswer={this.checkAnswer} />
               <h4 className="Lesson-reminder">NOTE: You will not need to include the // in your answer</h4>
               {this.props.complete && continueButton}
             </section>

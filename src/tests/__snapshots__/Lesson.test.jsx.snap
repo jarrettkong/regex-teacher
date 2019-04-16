@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Lesson Lesson render when complete should render the completeButton when the correct answer is guessed 1`] = `
+<section
+  className="Lesson"
+  id="Lesson"
+>
+  <Nav />
+  <div
+    className="Lesson-container"
+  >
+    <h2
+      className="Lesson-header"
+    >
+      Lesson 
+      2
+    </h2>
+    <div
+      className="Lesson-grid"
+    >
+      <section
+        className="Lesson-instructions Lesson-container"
+      >
+        <h3>
+          Topic: 
+          <span
+            className="Lesson-text"
+          >
+            Character Classes
+          </span>
+        </h3>
+        <h3>
+          Syntax: 
+          <span
+            className="Lesson-text Lesson-code"
+          >
+            \\d, \\D
+          </span>
+        </h3>
+        <h3>
+          Instructions: 
+          <span
+            className="Lesson-text"
+          >
+            Finds a single occurance of any digit 0-9 or non-digit, respectively.
+            .
+          </span>
+        </h3>
+        <h3>
+          Problem: 
+          <span
+            className="Lesson-text"
+          >
+            Find any dates of the format dd/dd/dddd, where d can be any digit between zero and nine
+          </span>
+        </h3>
+        <RegexForm
+          checkAnswer={[Function]}
+        />
+        <h4
+          className="Lesson-reminder"
+        >
+          NOTE: You will not need to include the // in your answer
+        </h4>
+        <button
+          className="Lesson-next-round App-btn"
+          onClick={[MockFunction]}
+        >
+          Continue
+        </button>
+      </section>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Lesson should render correctly 1`] = `
+<section
+  className="Lesson"
+  id="Lesson"
+>
+  <Nav />
+  <div
+    className="Lesson-container"
+  >
+    <h2
+      className="Lesson-header"
+    >
+      Lesson 
+      2
+    </h2>
+    <div
+      className="Lesson-grid"
+    >
+      <section
+        className="Lesson-instructions Lesson-container"
+      >
+        <h3>
+          Topic: 
+          <span
+            className="Lesson-text"
+          >
+            Character Classes
+          </span>
+        </h3>
+        <h3>
+          Syntax: 
+          <span
+            className="Lesson-text Lesson-code"
+          >
+            \\d, \\D
+          </span>
+        </h3>
+        <h3>
+          Instructions: 
+          <span
+            className="Lesson-text"
+          >
+            Finds a single occurance of any digit 0-9 or non-digit, respectively.
+            .
+          </span>
+        </h3>
+        <h3>
+          Problem: 
+          <span
+            className="Lesson-text"
+          >
+            Find any dates of the format dd/dd/dddd, where d can be any digit between zero and nine
+          </span>
+        </h3>
+        <RegexForm
+          checkAnswer={[Function]}
+        />
+        <h4
+          className="Lesson-reminder"
+        >
+          NOTE: You will not need to include the // in your answer
+        </h4>
+      </section>
+    </div>
+  </div>
+</section>
+`;

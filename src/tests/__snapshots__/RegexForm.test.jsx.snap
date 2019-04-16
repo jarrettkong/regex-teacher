@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegexForm should render the snapshot with all the data passed in 1`] = `
+<form
+  className="RegexForm"
+  onSubmit={[Function]}
+>
+  <div
+    className="Regex-input-container main-container"
+  >
+    <label
+      htmlFor="pattern-input"
+    >
+      Pattern
+    </label>
+    <input
+      id="pattern-input"
+      minLength="1"
+      onChange={[Function]}
+      placeholder="/pattern/"
+      spellCheck="false"
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    className="Regex-input-container flag-container"
+  >
+    <label
+      htmlFor="flag-input"
+    >
+      Flags
+    </label>
+    <input
+      id="flag-input"
+      onChange={[Function]}
+      pattern="[gimsxeU]*"
+      placeholder="/flags"
+      spellCheck="false"
+      type="text"
+      value=""
+    />
+  </div>
+  <input
+    className="RegexForm-submit"
+    type="submit"
+  />
+</form>
+`;

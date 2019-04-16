@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render correctly 1`] = `
+<section
+  className="App"
+  id="App"
+>
+  <header
+    className="App-header"
+  >
+    <h1
+      className="App-name"
+    >
+      / Regex /
+    </h1>
+    <p
+      className="App-tagline"
+    >
+      Learn Regular Expressions
+    </p>
+    <div
+      className="App-btn-container"
+    >
+      <button
+        className="App-btn"
+      >
+        <a
+          href="#Lesson"
+          role="button"
+        >
+          Learn
+        </a>
+      </button>
+      <button
+        className="App-btn"
+        disabled={true}
+      >
+        Sandbox
+      </button>
+      <p>
+        Coming Soon
+      </p>
+    </div>
+  </header>
+</section>
+`;

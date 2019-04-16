@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav should render correctly 1`] = `
+<aside
+  className="Nav"
+>
+  <div
+    className="Nav-container"
+  >
+    <a
+      className="home-icon Nav-icon"
+      href="#App"
+    >
+      <i
+        className="material-icons"
+      >
+        home
+      </i>
+    </a>
+    <p>
+      Home
+    </p>
+  </div>
+  <div
+    className="Nav-container"
+  >
+    <button
+      className="reset-icon Nav-icon"
+    >
+      <i
+        className="material-icons"
+      >
+        loop
+      </i>
+    </button>
+    <p>
+      Reset
+    </p>
+  </div>
+  <div
+    className="Nav-container"
+  >
+    <a
+      className="help-icon Nav-icon"
+      href="https://i.imgur.com/Wn8eOKG.png"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <i
+        className="material-icons"
+      >
+        help_outline
+      </i>
+    </a>
+    <p>
+      Help
+    </p>
+  </div>
+</aside>
+`;
