@@ -5,10 +5,10 @@ exports[`Lesson Lesson render when complete should render the completeButton whe
   className="Lesson"
   id="Lesson"
 >
-  <Nav />
   <div
     className="Lesson-container"
   >
+    <Nav />
     <h2
       className="Lesson-header"
     >
@@ -79,10 +79,10 @@ exports[`Lesson should render correctly 1`] = `
   className="Lesson"
   id="Lesson"
 >
-  <Nav />
   <div
     className="Lesson-container"
   >
+    <Nav />
     <h2
       className="Lesson-header"
     >
