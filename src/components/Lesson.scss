@@ -5,7 +5,7 @@ $accent-color: #00C296;
   color: white;
   align-items: center;
   margin: auto;
-  height: 100vh;
+  min-height: 100vh;
   padding: 30px 25px;
   display: flex;
   justify-content: center;
@@ -54,27 +54,4 @@ $accent-color: #00C296;
 
 .Lesson-reminder {
   color: orange;
-}
-
-.home-icon {
-  background-color: $accent-color;
-  color: white;
-  padding: 15px;
-  position: absolute;
-  top: 30px;
-  left: 25px;
-  cursor: pointer;
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-
-  & i {
-    font-size: 40px;
-  }
-
-  &:hover {
-    background-color: adjust-color($color: $accent-color, $lightness: 3%)
-  }
 }

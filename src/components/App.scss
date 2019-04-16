@@ -78,3 +78,26 @@ $background: #394950;
     cursor: not-allowed;
   }
 }
+
+.home-icon {
+  background-color: $accent-color;
+  color: white;
+  padding: 15px;
+  position: absolute;
+  top: 30px;
+  left: 25px;
+  cursor: pointer;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  & i {
+    font-size: 40px;
+  }
+
+  &:hover {
+    background-color: adjust-color($color: $accent-color, $lightness: 3%)
+  }
+}
