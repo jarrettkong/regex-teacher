@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SandboxForm should render the snapshot with all the data passed in 1`] = `
+<section>
+  <form
+    className="SandboxForm"
+  >
+    <div
+      className="Sandbox-input-container main-container"
+    >
+      <label
+        htmlFor="pattern-input"
+      >
+        Pattern
+      </label>
+      <input
+        id="pattern-input"
+        minLength="1"
+        onChange={[Function]}
+        placeholder="/pattern/"
+        spellCheck="false"
+        type="text"
+      />
+    </div>
+    <div
+      className="Sandbox-input-container flag-container"
+    >
+      <label
+        htmlFor="flag-input"
+      >
+        Flags
+      </label>
+      <input
+        id="flag-input"
+        onChange={[Function]}
+        pattern="[gimsxeU]*"
+        placeholder="/flags"
+        spellCheck="false"
+        type="text"
+      />
+    </div>
+  </form>
+  <hr />
+  <textarea
+    className="Sandbox-textarea"
+    id="Sandbox-textarea"
+    name="Sandbox-textarea"
+    placeholder="Enter the text you want to test your regular expression against..."
+    rows="20"
+    spellCheck="false"
+  />
+</section>
+`;

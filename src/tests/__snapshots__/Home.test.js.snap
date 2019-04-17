@@ -30,7 +30,7 @@ exports[`Home should render correctly 1`] = `
       Sandbox
     </NavLink>
     <p>
-      Coming Soon
+      Work in Progress
     </p>
   </nav>
 </header>

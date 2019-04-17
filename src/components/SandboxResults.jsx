@@ -12,6 +12,7 @@ const SandboxResults = (props) => {
       </div>
       <div className="SandboxResults-container">
         <h2 className="SandboxResults-header">Groups</h2>
+        <p>Coming Soon</p>
         {/* {props.groups.map((group, i) => {
           return <p className="SandboxResults-match">{i+1}. {group}</p>
         })} */}
