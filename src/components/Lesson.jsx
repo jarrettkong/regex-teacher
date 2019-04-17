@@ -27,6 +27,7 @@ class Lesson extends Component {
     const continueButton = <button className="Lesson-next-round App-btn" onClick={nextLesson}>Continue</button>
     let display;
 
+    // TODO break into separate components
     if(this.props.lessonNumber <= 21) {
       display = <div className="Lesson-container">
                   <Nav resetProgress={this.props.resetProgress}/>

@@ -32,6 +32,11 @@ describe('Lesson', () => {
       expect(result).toEqual([true, true, false, false, false])
     })
 
+    it('should output an array of true/false valuse based on the input', () => {
+      const result = wrapper.instance().getResult('', mockFlags);
+      expect(result).toEqual(undefined)
+    })
+
   });
 
   describe('checkAnswer', () => {

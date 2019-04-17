@@ -15,11 +15,6 @@ $accent-color: #00C296;
   }
 }
 
-.Nav-container {
-  display: flex;
-  align-items: center;
-}
-
 .Nav-icon {
   background-color: $accent-color;
   border: 0;
@@ -31,7 +26,7 @@ $accent-color: #00C296;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  margin: 15px 0;
+  margin-bottom: 25px;
 
   & i {
     font-size: 40px;
