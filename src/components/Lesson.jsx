@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import RegexForm from './RegexForm.jsx'
 import Nav from './Nav.jsx';
+import CompletePage from './CompletePage.jsx';
 import './Lesson.scss';
 
 class Lesson extends Component {
@@ -45,11 +46,7 @@ class Lesson extends Component {
                   </div>
                 </div>
     } else {
-      display = <div className="Lesson-complete-container">
-                  <h1 className="Lesson-complete-text">Congratulations</h1>
-                  <p>You have completed the course, if you would like more practice, you can click the reset button to start over.</p>
-                  <button className="App-btn Lesson-btn" onClick={this.props.resetProgress}>Restart</button>
-                </div>
+      display = <CompletePage resetProgress={this.props.resetProgress}/>
     }
 
     return (

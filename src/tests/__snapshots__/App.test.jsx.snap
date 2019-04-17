@@ -5,42 +5,22 @@ exports[`App should render correctly 1`] = `
   className="App"
   id="App"
 >
-  <header
-    className="App-header"
-  >
-    <h1
-      className="App-name"
-    >
-      / Regex /
-    </h1>
-    <p
-      className="App-tagline"
-    >
-      Learn Regular Expressions
-    </p>
-    <div
-      className="App-btn-container"
-    >
-      <button
-        className="App-btn"
-      >
-        <a
-          href="#Lesson"
-          role="button"
-        >
-          Learn
-        </a>
-      </button>
-      <button
-        className="App-btn"
-        disabled={true}
-      >
-        Sandbox
-      </button>
-      <p>
-        Coming Soon
-      </p>
-    </div>
-  </header>
+  <BrowserRouter>
+    <Switch>
+      <Route
+        exact={true}
+        path="/"
+        render={[Function]}
+      />
+      <Route
+        path="/learn"
+        render={[Function]}
+      />
+      <Route
+        path="/sandbox"
+        render={[Function]}
+      />
+    </Switch>
+  </BrowserRouter>
 </section>
 `;

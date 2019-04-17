@@ -41,10 +41,10 @@ export class Learn extends Component {
 
   render() {
     const { lessons, lessonNumber, complete } = this.state;
-    let lessonDisplay = null;
+    let lesson = null;
 
     if(!this.state.isLoading) {
-      lessonDisplay = <Lesson lessonNumber={lessonNumber} 
+      lesson = <Lesson lessonNumber={lessonNumber} 
                               lesson={lessons[lessonNumber - 1]} 
                               complete={complete} 
                               nextLesson={this.nextLesson} 
@@ -53,7 +53,7 @@ export class Learn extends Component {
     }
     return (
       <main>
-        {lessonDisplay}
+        {lesson}
       </main>
     )
   }

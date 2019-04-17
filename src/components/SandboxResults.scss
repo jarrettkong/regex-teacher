@@ -1,0 +1,19 @@
+.SandboxResults {
+  border: 1px solid white;
+  border-radius: 2px;
+  padding: 25px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.SandboxResults-header {
+  margin: 0;
+}
+
+.SandboxResults-match {
+  margin: 5px 20px;
+}
+
+.SandboxResults-container {
+  overflow-y: scroll;
+}

@@ -4,57 +4,36 @@ exports[`Nav should render correctly 1`] = `
 <aside
   className="Nav"
 >
-  <div
-    className="Nav-container"
+  <NavLink
+    className="home-icon Nav-icon"
+    to="/"
   >
-    <a
-      className="home-icon Nav-icon"
-      href="#App"
+    <i
+      className="material-icons"
     >
-      <i
-        className="material-icons"
-      >
-        home
-      </i>
-    </a>
-    <p>
-      Home
-    </p>
-  </div>
-  <div
-    className="Nav-container"
+      home
+    </i>
+  </NavLink>
+  <button
+    className="reset-icon Nav-icon"
   >
-    <button
-      className="reset-icon Nav-icon"
+    <i
+      className="material-icons"
     >
-      <i
-        className="material-icons"
-      >
-        loop
-      </i>
-    </button>
-    <p>
-      Reset
-    </p>
-  </div>
-  <div
-    className="Nav-container"
+      loop
+    </i>
+  </button>
+  <a
+    className="help-icon Nav-icon"
+    href="https://i.imgur.com/Wn8eOKG.png"
+    rel="noopener noreferrer"
+    target="_blank"
   >
-    <a
-      className="help-icon Nav-icon"
-      href="https://i.imgur.com/Wn8eOKG.png"
-      rel="noopener noreferrer"
-      target="_blank"
+    <i
+      className="material-icons"
     >
-      <i
-        className="material-icons"
-      >
-        help_outline
-      </i>
-    </a>
-    <p>
-      Help
-    </p>
-  </div>
+      help_outline
+    </i>
+  </a>
 </aside>
 `;
