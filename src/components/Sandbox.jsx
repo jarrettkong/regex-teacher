@@ -17,11 +17,15 @@ class Sandbox extends Component {
   }
 
   _handleForm = (pattern, flags) => {
-    if(pattern.endsWith('\\')) {
+    // If input ends with - [ ] \ ( )
+    if(pattern.match(/[-\[\]\\\(\)]$/)) {
       return;
     }
     this.setState({ pattern, flags }, () => {
       const matches = this.getMatches();
+      if(!matches){
+        return;
+      }
       this.setState({ matches })
     })
   }
@@ -29,6 +33,9 @@ class Sandbox extends Component {
   _handleTextArea = e => {
     this.setState({ inputValue: e.target.value }, () => {
       const matches = this.getMatches();
+      if(!matches) {
+        return;
+      }
       this.setState({ matches })
     })
   }

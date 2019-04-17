@@ -10,7 +10,7 @@ const Home = () => {
       <nav className="Home-btn-container">
         <NavLink to="/learn" className="App-btn">Learn</NavLink>
         <NavLink to="/sandbox" className="App-btn">Sandbox</NavLink>
-        <p>Coming Soon</p>
+        <p>Work in Progress</p>
       </nav>
     </header>
   )
