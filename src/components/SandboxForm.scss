@@ -12,6 +12,7 @@
     margin-top: 5px;
     color: #DE6A73;
     font-family: 'Roboto Mono', monospace;
+    box-shadow: 0 0 5px grey inset;
 
     &:focus {
       outline: transparent;
@@ -33,11 +34,13 @@ hr {
 }
 
 .Sandbox-textarea {
+  box-shadow: 0 0 5px grey inset;
   width: 100%;
   border: 0;
   border-radius: 2px;
   padding: 15px;
   font-size: 17px;
+  resize: none;
   &:focus {
     outline: transparent;
   }

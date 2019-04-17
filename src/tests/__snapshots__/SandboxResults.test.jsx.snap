@@ -4,42 +4,30 @@ exports[`SandboxResults should render the snapshot with all the data passed in 1
 <section
   className="SandboxResults"
 >
+  <h2
+    className="SandboxResults-header"
+  >
+    Matches
+  </h2>
   <div
     className="SandboxResults-container"
   >
-    <h2
-      className="SandboxResults-header"
+    <ol
+      className="SandboxResults-match-container"
     >
-      Matches
-    </h2>
-    <p
-      className="SandboxResults-match"
-      key="0"
-    >
-      1
-      . 
-      email1@test.com
-    </p>
-    <p
-      className="SandboxResults-match"
-      key="1"
-    >
-      2
-      . 
-      email_two@test-2.com
-    </p>
-  </div>
-  <div
-    className="SandboxResults-container"
-  >
-    <h2
-      className="SandboxResults-header"
-    >
-      Groups
-    </h2>
-    <p>
-      Coming Soon
-    </p>
+      <li
+        className="SandboxResults-match"
+        key="0"
+      >
+        email1@test.com
+      </li>
+      <li
+        className="SandboxResults-match"
+        key="1"
+      >
+        email_two@test-2.com
+      </li>
+    </ol>
   </div>
 </section>
 `;

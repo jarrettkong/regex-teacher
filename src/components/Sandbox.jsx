@@ -17,10 +17,6 @@ class Sandbox extends Component {
   }
 
   _handleForm = (pattern, flags) => {
-    // If input ends with - [ ] \ ( )
-    if(pattern.match(/[-\[\]\\\(\)]$/)) {
-      return;
-    }
     this.setState({ pattern, flags }, () => {
       const matches = this.getMatches();
       if(!matches){
@@ -42,12 +38,13 @@ class Sandbox extends Component {
 
   getMatches = () => {
     const { pattern, flags, inputValue } = this.state;
-    const regex = new RegExp(pattern, flags);
-    const matches = inputValue.match(regex);
-    if(!matches) {
-      return;
+    try {
+      const regex = new RegExp(pattern, flags);
+      const matches = inputValue.match(regex);
+      return matches;
+    } catch(err) {
+      return
     }
-    return matches;
   }
 
   render() {

@@ -1,19 +1,34 @@
-.SandboxResults {
-  border: 1px solid white;
+.SandboxResults-container {
   border-radius: 2px;
   padding: 25px;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
+  box-shadow: 0 0 5px grey inset;
+  color: black;
+  background-color: white;
+  height: 525px;
+  & ol {
+    margin: 0;
+    padding-left: 15px;
+  }
 }
 
 .SandboxResults-header {
-  margin: 0;
+  margin-top: 0;
 }
 
 .SandboxResults-match {
+  padding-left: 10px;
   margin: 5px 20px;
+  // color: white;
+  background-color: rgb(198, 230, 198);
+  &:nth-child(odd) {
+    background-color: rgb(165, 209, 165);
+  }
 }
 
-.SandboxResults-container {
-  overflow-y: scroll;
+.SandboxResults-match-container {
+  overflow-x: wrap;
+  overflow: hidden;
+  height: 300px;
 }
