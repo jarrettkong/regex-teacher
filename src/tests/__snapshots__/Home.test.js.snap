@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home should render correctly 1`] = `
+<header
+  className="Home-header"
+>
+  <h1
+    className="Home-name"
+  >
+    / Regex /
+  </h1>
+  <p
+    className="Home-tagline"
+  >
+    Learn Regular Expressions
+  </p>
+  <nav
+    className="Home-btn-container"
+  >
+    <NavLink
+      className="App-btn"
+      to="/learn"
+    >
+      Learn
+    </NavLink>
+    <NavLink
+      className="App-btn"
+      to="/sandbox"
+    >
+      Sandbox
+    </NavLink>
+    <p>
+      Work in Progress
+    </p>
+  </nav>
+</header>
+`;

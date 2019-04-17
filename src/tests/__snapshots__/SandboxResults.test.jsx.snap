@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SandboxResults should render the snapshot with all the data passed in 1`] = `
+<section
+  className="SandboxResults"
+>
+  <h2
+    className="SandboxResults-header"
+  >
+    Matches
+  </h2>
+  <div
+    className="SandboxResults-container"
+  >
+    <ol
+      className="SandboxResults-match-container"
+    >
+      <li
+        className="SandboxResults-match"
+        key="0"
+      >
+        email1@test.com
+      </li>
+      <li
+        className="SandboxResults-match"
+        key="1"
+      >
+        email_two@test-2.com
+      </li>
+    </ol>
+  </div>
+</section>
+`;

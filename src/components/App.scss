@@ -5,39 +5,6 @@ $background: #394950;
   background-color: $background;
 }
 
-.App-header {
-  height: 100vh;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.App-name {
-  font-size: 100px;
-  margin: 0;
-}
-
-.App-tagline {
-  margin: 0 0 25px 0;
-}
-
-.App-btn-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 25px;
-  text-align: center;
-
-  & p {
-    grid-column-start: 2;
-    text-transform: uppercase;
-    margin-top: 10px;
-    color: lightslategrey;
-    font-weight: 600;
-  }
-}
-
 .App-btn {
   width: 200px;
   height: 40px;

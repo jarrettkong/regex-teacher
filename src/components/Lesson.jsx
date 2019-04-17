@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import RegexForm from './RegexForm.jsx'
 import Nav from './Nav.jsx';
+import CompletePage from './CompletePage.jsx';
 import './Lesson.scss';
 
 class Lesson extends Component {
@@ -36,7 +37,7 @@ class Lesson extends Component {
                     <section className="Lesson-instructions Lesson-container">
                       <h3>Topic: <span className="Lesson-text">{lesson.topic}</span></h3>
                       <h3>Syntax: <span className="Lesson-text Lesson-code">{lesson.syntax}</span></h3>
-                      <h3>Instructions: <span className="Lesson-text">{lesson.instructions}.</span></h3>
+                      <h3>Instructions: <span className="Lesson-text">{lesson.instructions}</span></h3>
                       <h3>Problem: <span className="Lesson-text">{lesson.problem}</span></h3>
                       <RegexForm checkAnswer={this.checkAnswer} />
                       <h4 className="Lesson-reminder">NOTE: You will not need to include the // in your answer</h4>
@@ -45,11 +46,7 @@ class Lesson extends Component {
                   </div>
                 </div>
     } else {
-      display = <div className="Lesson-complete-container">
-                  <h1 className="Lesson-complete-text">Congratulations</h1>
-                  <p>You have completed the course, if you would like more practice, you can click the reset button to start over.</p>
-                  <button className="App-btn Lesson-btn" onClick={this.props.resetProgress}>Restart</button>
-                </div>
+      display = <CompletePage resetProgress={this.props.resetProgress}/>
     }
 
     return (

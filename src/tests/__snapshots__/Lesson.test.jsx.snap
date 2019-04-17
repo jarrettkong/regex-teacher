@@ -5,23 +5,7 @@ exports[`Lesson Course complete screen should render the completeButton when the
   className="Lesson"
   id="Lesson"
 >
-  <div
-    className="Lesson-complete-container"
-  >
-    <h1
-      className="Lesson-complete-text"
-    >
-      Congratulations
-    </h1>
-    <p>
-      You have completed the course, if you would like more practice, you can click the reset button to start over.
-    </p>
-    <button
-      className="App-btn Lesson-btn"
-    >
-      Restart
-    </button>
-  </div>
+  <CompletePage />
 </section>
 `;
 
@@ -68,7 +52,6 @@ exports[`Lesson Render complete button should render the completeButton when the
             className="Lesson-text"
           >
             Finds a single occurance of any digit 0-9 or non-digit, respectively.
-            .
           </span>
         </h3>
         <h3>
@@ -142,7 +125,6 @@ exports[`Lesson should render correctly 1`] = `
             className="Lesson-text"
           >
             Finds a single occurance of any digit 0-9 or non-digit, respectively.
-            .
           </span>
         </h3>
         <h3>

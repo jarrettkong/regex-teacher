@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SandboxForm should render the snapshot with all the data passed in 1`] = `
+<main
+  className="Sandbox"
+>
+  <Nav />
+  <h1
+    className="Sandbox-header"
+  >
+    Sandbox
+  </h1>
+  <p>
+    Test your regular expressions with a custom input
+  </p>
+  <section
+    className="Sandbox-area"
+  >
+    <SandboxForm
+      handleForm={[Function]}
+      handleTextArea={[Function]}
+    />
+    <SandboxResults
+      matches={Array []}
+    />
+  </section>
+</main>
+`;

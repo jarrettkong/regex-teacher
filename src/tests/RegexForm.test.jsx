@@ -32,7 +32,7 @@ describe('RegexForm', () => {
       wrapper.find('#pattern-input').simulate('change', { target: { value: 'pattern' } })
       expect(wrapper.state('pattern')).toEqual('pattern');
     })
-
+ 
   })
 
   describe('_handleFlags', () => {
