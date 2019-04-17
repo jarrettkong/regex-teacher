@@ -36,7 +36,7 @@ class Lesson extends Component {
                     <section className="Lesson-instructions Lesson-container">
                       <h3>Topic: <span className="Lesson-text">{lesson.topic}</span></h3>
                       <h3>Syntax: <span className="Lesson-text Lesson-code">{lesson.syntax}</span></h3>
-                      <h3>Instructions: <span className="Lesson-text">{lesson.instructions}.</span></h3>
+                      <h3>Instructions: <span className="Lesson-text">{lesson.instructions}</span></h3>
                       <h3>Problem: <span className="Lesson-text">{lesson.problem}</span></h3>
                       <RegexForm checkAnswer={this.checkAnswer} />
                       <h4 className="Lesson-reminder">NOTE: You will not need to include the // in your answer</h4>
