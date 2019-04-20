@@ -14,8 +14,8 @@ class SandboxForm extends Component {
   _handleChange = e => {
     this.setState({ [e.target.name]: e.target.value }, () => {
       const { pattern, flags, body } = this.state;
-      const inputData = { pattern, flags, body };
-      this.props.displayMatches(inputData);
+      const formData = { pattern, flags, body };
+      this.props.handleData(formData);
     });
   };
 

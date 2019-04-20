@@ -12,16 +12,16 @@ class Sandbox extends Component {
     };
   }
 
-  displayMatches = inputData => {
-    const matches = this.getMatches(inputData);
+  handleData = formData => {
+    const matches = this.getMatches(formData);
     if (!matches) {
       return;
     }
     this.setState({ matches });
   };
 
-  getMatches = inputData => {
-    const { pattern, flags, body } = inputData;
+  getMatches = formData => {
+    const { pattern, flags, body } = formData;
     try {
       const regex = new RegExp(pattern, flags);
       const matches = body.match(regex);
@@ -38,7 +38,7 @@ class Sandbox extends Component {
         <h1 className="Sandbox-header">Sandbox</h1>
         <p>Test your regular expressions with a custom input</p>
         <section className="Sandbox-area">
-          <SandboxForm displayMatches={this.displayMatches} />
+          <SandboxForm handleData={this.handleData} />
           <SandboxResults matches={this.state.matches} />
         </section>
       </main>
