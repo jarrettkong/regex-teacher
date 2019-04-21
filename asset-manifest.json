@@ -1,13 +1,13 @@
 {
   "main.css": "/regex-teacher/static/css/main.48f62788.chunk.css",
-  "main.js": "/regex-teacher/static/js/main.a7f486ac.chunk.js",
-  "main.js.map": "/regex-teacher/static/js/main.a7f486ac.chunk.js.map",
+  "main.js": "/regex-teacher/static/js/main.6eaae2de.chunk.js",
+  "main.js.map": "/regex-teacher/static/js/main.6eaae2de.chunk.js.map",
   "runtime~main.js": "/regex-teacher/static/js/runtime~main.f4ac023f.js",
   "runtime~main.js.map": "/regex-teacher/static/js/runtime~main.f4ac023f.js.map",
-  "static/js/2.84fe9546.chunk.js": "/regex-teacher/static/js/2.84fe9546.chunk.js",
-  "static/js/2.84fe9546.chunk.js.map": "/regex-teacher/static/js/2.84fe9546.chunk.js.map",
+  "static/js/2.d0a374a0.chunk.js": "/regex-teacher/static/js/2.d0a374a0.chunk.js",
+  "static/js/2.d0a374a0.chunk.js.map": "/regex-teacher/static/js/2.d0a374a0.chunk.js.map",
   "index.html": "/regex-teacher/index.html",
-  "precache-manifest.6339b283f46824b85f8562c042ea2f37.js": "/regex-teacher/precache-manifest.6339b283f46824b85f8562c042ea2f37.js",
+  "precache-manifest.17c54e6c4bf457459beb7ded2cb1fa7a.js": "/regex-teacher/precache-manifest.17c54e6c4bf457459beb7ded2cb1fa7a.js",
   "service-worker.js": "/regex-teacher/service-worker.js",
   "static/css/main.48f62788.chunk.css.map": "/regex-teacher/static/css/main.48f62788.chunk.css.map"
 }
