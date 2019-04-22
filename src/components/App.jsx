@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route, HashRouter as Router } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import Home from './Home.jsx'
 import Learn from './Learn.jsx'
 import Sandbox from './Sandbox.jsx'
